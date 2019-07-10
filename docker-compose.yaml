@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  three-stuff:
+    image: node:11-slim
+    working_dir: /app
+    tty: true
+    volumes:
+      - .:/app
+    environment:
+      - npm_config_cache=npm-cache
+    entrypoint: yarn
+    command: ['build']

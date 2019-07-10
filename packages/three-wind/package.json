@@ -1,0 +1,45 @@
+{
+  "name": "three-wind",
+  "version": "0.0.1",
+  "description": "Wind simulation in three-js",
+  "keywords": [
+    "js",
+    "node",
+    "typescript",
+    "games"
+  ],
+  "author": "Kenneth Pirman <npm@kenny.wtf>",
+  "homepage": "https://github.com/wild-magic",
+  "license": "Apache-2.0",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "unpkg": "dist/index.js",
+  "typings": "lib/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenjinp/three-things"
+  },
+  "scripts": {
+    "prebuild": "npm run clean",
+    "build": "rollup -c",
+    "build:watch": "rollup -c -w",
+    "clean": "rm -fr es/ && rm -fr dist/ && rm -fr lib/"
+  },
+  "bugs": {
+    "url": "https://github.com/kenjinp/three-things/issues"
+  },
+  "dependencies": {},
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "three": "^0.106.2"
+  }
+}

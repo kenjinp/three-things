@@ -1,0 +1,75 @@
+{
+  "keywords": [
+    "typescript",
+    "sdk",
+    "js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenjinp/three-things"
+  },
+  "license": "Apache-2.0",
+  "scripts": {
+    "test": "jest",
+    "codecov": "codecov",
+    "lint": "tslint packages/**/src/**/* -e **/*.md",
+    "clean": "rm -fr es/ && rm -fr dist/ && rm -fr lib/ && rm -fr documentation/",
+    "prepublishOnly": "npm run test && npm run lint"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@types/eventsource": "^1.1.0",
+    "@types/jest": "^24.0.13",
+    "@types/node-fetch": "^2.3.4",
+    "codecov": "^3.5.0",
+    "eslint": "^5.16.0",
+    "husky": "^1.3.1",
+    "jest": "^24.8.0",
+    "jest-fetch-mock": "^2.1.2",
+    "lerna": "^3.13.1",
+    "lint-staged": "^8.1.7",
+    "prettier": "^1.17.1",
+    "rollup": "^1.12.3",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-terser": "^4.0.4",
+    "rollup-plugin-typescript2": "^0.21.2",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.1.0",
+    "tslint": "^5.16.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.4.5"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "dependencies": {
+    "cross-fetch": "^3.0.2",
+    "eventsource": "^1.0.7",
+    "isomorphic-form-data": "^2.0.0"
+  },
+  "lint-staged": {
+    "*.{ts, tsx, js, jsx}": [
+      "prettier --write",
+      "git add"
+    ],
+    "!(package).json": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm test",
+      "pre-commit": "lint-staged"
+    }
+  }
+}

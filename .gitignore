@@ -1,0 +1,15 @@
+.cache/
+.DS_Store
+dist/
+es/
+lib/
+documentation/
+node_modules/
+envs/*.env
+.vscode
+coverage/
+npm-cache/
+.ocp-port-forwarding.js
+*.log
+.rpt2_cache
+package-lock.json
