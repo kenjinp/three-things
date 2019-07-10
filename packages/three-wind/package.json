@@ -1,6 +1,6 @@
 {
   "name": "three-wind",
-  "version": "0.0.1",
+  "version": "0.0.2-alpha.0",
   "description": "Wind simulation in three-js",
   "keywords": [
     "js",
@@ -35,7 +35,6 @@
   "bugs": {
     "url": "https://github.com/kenjinp/three-things/issues"
   },
-  "dependencies": {},
   "publishConfig": {
     "access": "public"
   },

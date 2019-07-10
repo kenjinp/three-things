@@ -1,6 +1,6 @@
 {
   "name": "three-cloth",
-  "version": "0.0.1",
+  "version": "0.0.2-alpha.0",
   "description": "Cloth simulation in three-js",
   "keywords": [
     "js",
@@ -36,7 +36,7 @@
     "url": "https://github.com/kenjinp/three-things/issues"
   },
   "dependencies": {
-    "three-wind": "^0.0.1"
+    "three-wind": "^0.0.2-alpha.0"
   },
   "publishConfig": {
     "access": "public"
